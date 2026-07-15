@@ -4,111 +4,49 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SchrittTracker - Schrittzaehler & Ziele</title>
-  <meta name="description" content="SchrittTracker ist ein privater Schrittzaehler fuer iPhone und Apple Watch mit Zielen, Widgets, Badges und optionalen GPS-Routen.">
-  <style>
-    :root { color-scheme: dark; --bg:#08111d; --panel:#101c2e; --line:rgba(255,255,255,.12); --text:#f5fbff; --muted:#a6b6ca; --green:#7cff38; --cyan:#48d6ff; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif; line-height:1.55; color:var(--text); background:radial-gradient(circle at 18% 8%, rgba(124,255,56,.22), transparent 32rem),radial-gradient(circle at 88% 16%, rgba(72,214,255,.18), transparent 30rem),var(--bg); }
-    a { color:var(--green); }
-    .shell { width:min(1040px,calc(100% - 32px)); margin:0 auto; padding:56px 0 40px; }
-    .nav { display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between; margin-bottom:28px; }
-    .nav a { text-decoration:none; color:var(--text); }
-    .brand { font-weight:800; letter-spacing:0; }
-    .links { display:flex; flex-wrap:wrap; gap:16px; }
-    .hero { min-height:52vh; display:flex; flex-direction:column; justify-content:center; }
-    .eyebrow,.meta { margin:0 0 12px; color:var(--muted); font-weight:700; }
-    h1 { margin:0; max-width:860px; font-size:clamp(46px,10vw,104px); line-height:.94; }
-    .lead { margin:22px 0 0; max-width:760px; color:var(--muted); font-size:clamp(20px,3vw,30px); }
-    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:32px; }
-    .button { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:0 20px; border:1px solid var(--line); border-radius:8px; background:rgba(255,255,255,.06); color:var(--text); font-weight:800; text-decoration:none; }
-    .button.primary { border-color:transparent; background:linear-gradient(135deg,var(--green),var(--cyan)); color:#07111f; }
-    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:20px; }
-    .card, .section { border:1px solid var(--line); border-radius:8px; background:rgba(16,28,46,.78); box-shadow:0 20px 70px rgba(0,0,0,.22); }
-    .card { padding:22px; }
-    .card h2, .section h2 { margin:0 0 10px; font-size:22px; }
-    .card p, .section p, .section li { color:var(--muted); }
-    .section { margin-top:14px; padding:24px; scroll-margin-top:20px; }
-    ul { margin:0; padding-left:20px; }
-    footer { display:flex; flex-wrap:wrap; gap:18px; justify-content:center; padding:26px 16px 42px; border-top:1px solid var(--line); color:var(--muted); }
-    footer a { color:var(--text); text-decoration:none; }
-    @media (max-width: 800px) { .grid { grid-template-columns:1fr; } .hero { min-height:48vh; } }
-  </style>
+  <meta name="description" content="SchrittTracker ist ein privater Schrittzaehler fuer iPhone und Apple Watch mit Zielen, Badges, Widgets und optionalen GPS-Routen.">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main class="shell">
-    <nav class="nav">
-      <a class="brand" href="#top">SchrittTracker</a>
-      <div class="links">
-        <a href="#funktionen">Funktionen</a>
-        <a href="#datenschutz">Datenschutz</a>
-        <a href="#support">Support</a>
-      </div>
-    </nav>
-
-    <section class="hero" id="top">
+    <section class="hero">
       <p class="eyebrow">iPhone & Apple Watch</p>
       <h1>SchrittTracker</h1>
       <p class="lead">Dein privater Schrittzaehler fuer Alltag, Ziele, Badges, Widgets und Live-Gehen mit Route.</p>
       <div class="actions">
-        <a class="button primary" href="#datenschutz">Datenschutz</a>
-        <a class="button" href="#support">Support</a>
+        <a class="button primary" href="./datenschutz/">Datenschutz</a>
+        <a class="button" href="./support/">Support</a>
       </div>
     </section>
 
-    <section class="grid" id="funktionen">
-      <article class="card">
+    <section class="grid">
+      <article>
         <h2>Schritte sichtbar machen</h2>
         <p>Verfolge Schritte, Distanz, Gehzeit, aktive Kalorien und deinen Fortschritt zum Tagesziel.</p>
       </article>
-      <article class="card">
+      <article>
         <h2>Motivation im Alltag</h2>
         <p>Sammle Badges, halte Serien, steige im Level auf und verfolge Tages-, Wochen- und Monatsziele.</p>
       </article>
-      <article class="card">
+      <article>
         <h2>Watch, Widgets & Routen</h2>
         <p>Nutze Apple Watch, Home-Screen-Widgets und optionale Live-Gehsessions mit GPS-Distanz, Pace und Route.</p>
       </article>
+      <article>
+        <h2>Privat gebaut</h2>
+        <p>Keine Werbung, kein Tracking, kein Entwickler-Backend. Deine Daten bleiben auf deinem Geraet oder in deinem privaten iCloud-Backup.</p>
+      </article>
     </section>
 
-    <section class="section">
-      <h2>Wichtiger Hinweis</h2>
+    <section class="notice">
+      <h2>Hinweis</h2>
       <p>SchrittTracker dient der persoenlichen Orientierung und Motivation. Die App ist keine medizinische App und ersetzt keine medizinische Beratung, Diagnose oder Behandlung.</p>
-      <p>SchrittTracker nutzt kein HealthKit, zeigt keine Werbung und fuehrt kein App-Tracking ueber andere Apps oder Websites aus.</p>
-    </section>
-
-    <section class="section" id="datenschutz">
-      <h2>Datenschutz</h2>
-      <p class="meta">Stand: 11. Juni 2026</p>
-      <p>SchrittTracker ist als privater Schrittzaehler und Bewegungs-Tagebuch gestaltet. Die App nutzt kein vom Entwickler betriebenes Backend, verkauft keine Nutzerdaten und verfolgt Nutzer nicht ueber Apps oder Websites hinweg.</p>
-      <p>Die App speichert Profileinstellungen wie Tagesziel, Gewicht, Groesse und Schrittlaenge auf dem Geraet. Diese Werte werden genutzt, um Distanz, aktive Kalorien und BMI grob zu schaetzen.</p>
-      <p>Bewegungs- und Motivationsdaten wie Schritte, geschaetzte Distanz, Gehzeit, aktive Kalorien, Serien, Level, Badges und Ziele werden in der App gespeichert.</p>
-      <p>Wenn du eine Live-Gehsession startest, kann SchrittTracker deinen Standort verwenden, um GPS-Distanz, Pace und Route anzuzeigen. Standortdaten werden nur waehrend einer gestarteten Session verwendet. Die Speicherung von Routen kann in der App deaktiviert werden.</p>
-      <p>Wenn iCloud verfuegbar ist, kann SchrittTracker eine Backup-Datei in deinem privaten iCloud-Container speichern. Dieses Backup dient dazu, App-Daten fuer denselben Nutzer wiederherzustellen. Der Entwickler betreibt dafuer keinen eigenen Server.</p>
-      <p>Game Center ist optional. Wenn du dich mit Game Center anmeldest, kann SchrittTracker Schrittwerte, Serien und Erfolge an Apple Game Center uebermitteln. Nach Apples Berechtigungsdialog kann die App Game-Center-Freunde fuer Bestenlisten und Challenges anzeigen. GPS-Routen, Gewicht, Groesse und Koerperdaten werden nicht mit Game-Center-Freunden geteilt.</p>
-      <p>Wenn du Feedback aus der App sendest, oeffnet SchrittTracker einen E-Mail-Entwurf. Die E-Mail wird nur versendet, wenn du sie selbst in deiner Mail-App abschickst. Inhalt der Nachricht und Absenderadresse werden vom Support-Postfach empfangen und fuer Antwort, Support und Verbesserung der App genutzt.</p>
-      <ul>
-        <li>Bewegung & Fitness: fuer Schritte, Distanz und Gehzeit.</li>
-        <li>Standort: nur waehrend gestarteter Live-Gehsessions fuer GPS-Distanz, Pace und Route.</li>
-        <li>Mitteilungen: optional fuer Erinnerungen.</li>
-        <li>Game Center: optional fuer Bestenlisten, Erfolge und Freundesvergleich.</li>
-      </ul>
-      <p>SchrittTracker enthaelt keine Drittanbieter-Werbung, nutzt kein App-Tracking und verkauft keine personenbezogenen Daten.</p>
-    </section>
-
-    <section class="section" id="support">
-      <h2>Support</h2>
-      <p>Bei Fragen, Problemen oder Ideen zu SchrittTracker erreichst du uns per E-Mail.</p>
-      <p><a class="button primary" href="mailto:qode.studio030@gmail.com?subject=Support%20zu%20SchrittTracker">qode.studio030@gmail.com</a></p>
-      <p>Im Profil der App findest du den Bereich fuer Anregungen und Vorschlaege. Dort oeffnet SchrittTracker einen E-Mail-Entwurf. Die Nachricht wird nur gesendet, wenn du sie selbst abschickst.</p>
-      <p>SchrittTracker nutzt kein HealthKit und ist keine medizinische App.</p>
     </section>
   </main>
 
   <footer>
-    <a href="#top">Start</a>
-    <a href="#datenschutz">Datenschutz</a>
-    <a href="#support">Support</a>
+    <a href="./datenschutz/">Datenschutz</a>
+    <a href="./support/">Support</a>
     <span>Copyright 2026 Abdul Anani</span>
   </footer>
 </body>
