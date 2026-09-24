@@ -11,11 +11,11 @@
   <main class="shell legal">
     <a class="back" href="../">SchrittTracker</a>
     <h1>Datenschutzerklaerung</h1>
-    <p class="meta">Stand: 15. Juli 2026</p>
+    <p class="meta">Stand: 25. September 2026</p>
 
     <section>
       <h2>Grundsatz</h2>
-      <p>SchrittTracker ist als privater Schrittzaehler und Bewegungs-Tagebuch gestaltet. Die App nutzt kein vom Entwickler betriebenes Backend, verkauft keine Nutzerdaten und verfolgt Nutzer nicht ueber Apps oder Websites hinweg.</p>
+      <p>SchrittTracker ist als privater Schrittzaehler und Bewegungs-Tagebuch gestaltet. Die meisten Daten bleiben auf deinem Geraet oder in von Apple verwalteten Diensten. Eine anonyme Nutzungsstatistik mit Entwickler-Backend ist freiwillig und standardmaessig ausgeschaltet. SchrittTracker verkauft keine Daten und verfolgt Nutzer nicht fuer Werbung ueber Apps oder Websites hinweg.</p>
     </section>
 
     <section>
@@ -26,13 +26,27 @@
     </section>
 
     <section>
+      <h2>Optionales Profilbild</h2>
+      <p>Du kannst mit Apples System-Fotoauswahl freiwillig genau ein Profilbild waehlen. SchrittTracker fordert keinen pauschalen Zugriff auf deine Mediathek an. Die App verarbeitet auf dem Geraet eine verkleinerte Kopie ohne urspruengliche Standort- oder Kameradaten.</p>
+      <p>Diese Kopie bleibt im privaten App-Speicher, wird nicht an das Statistik-Backend, Game Center oder die Apple Watch uebertragen und ist von App-Backups und Exporten ausgeschlossen. Du kannst sie im Profil ersetzen oder entfernen.</p>
+    </section>
+
+    <section>
+      <h2>Freiwillige anonyme Nutzungsstatistik</h2>
+      <p>Unter Profil &gt; Datenschutz kannst du "Anonyme Nutzungsstatistik teilen" freiwillig aktivieren. Die Funktion ist standardmaessig ausgeschaltet. Bei Aktivierung erzeugt SchrittTracker eine zufaellige Installationskennung im iPhone-Schluesselbund und uebermittelt App-Version und Plattform, Vordergrund-/Hintergrund-Signale sowie ein Tagesaggregat aus Schritten, Tagesziel, geschaetzter Distanz, Anzahl gespeicherter Spaziergaenge und Gehzeit.</p>
+      <p>Die Kennung enthaelt keinen Namen, keine E-Mail-Adresse, keine Apple-ID und keine Werbe-ID. Nicht uebertragen werden Profilbild, Gewicht, Groesse, Puls, Schlaf, Trinkdaten, genaue GPS-Koordinaten, Routen oder einzelne HealthKit-Messwerte. Die Daten werden ausschliesslich verwendet, um Nutzung und Stabilitaet von SchrittTracker zu verstehen und die App zu verbessern. Aktivitaetswerte erscheinen im Admin-Dashboard erst ab mindestens fuenf teilnehmenden Installationen.</p>
+      <p>Die geschuetzte Speicherung erfolgt in einem Supabase-Projekt; die Schnittstelle und das Admin-Dashboard werden ueber Vercel betrieben. Rohdaten der Live-Praesenz laufen nach 70 Minuten ab und werden stuendlich geloescht. Sitzungen und Tagesaggregate werden hoechstens 400 Tage gespeichert. Installationsdatensaetze werden nach 400 Tagen ohne Kontakt entfernt.</p>
+      <p>Wenn du die Funktion ausschaltest, fordert SchrittTracker die Loeschung aller mit der zufaelligen Kennung verbundenen Serverdaten an. Nach erfolgreicher Loeschung wird die Kennung vom Geraet entfernt. Ist das iPhone voruebergehend offline, versucht die App die Loeschung bei der naechsten Verbindung erneut.</p>
+    </section>
+
+    <section>
       <h2>Apple Health und Wellnesswerte</h2>
       <p>Apple Health ist optional. Erst nach deiner Freigabe kann SchrittTracker Herzfrequenz, Ruhepuls, Herzfrequenzvariabilitaet (HRV), Atemfrequenz, Blutsauerstoff, Stehzeit, Schlafanalyse, Gangstabilitaet und aufgenommenes Ernaehrungs-Cholesterin lesen.</p>
       <p>Aus freiwillig freigegebenen Werten berechnet die App auf deinem Geraet transparente Schlaf-, Stress- und Erholungsschaetzungen zur persoenlichen Orientierung. Aufgenommenes Ernaehrungs-Cholesterin ist kein Blut-, LDL- oder HDL-Laborwert.</p>
       <p>Die Trinkwasser-Synchronisierung mit Apple Health ist freiwillig. Erst wenn du sie selbst aktivierst und freigibst, kann SchrittTracker den HealthKit-Datentyp "Trinkwasser" lesen und schreiben. Die App zeigt dann den von Apple Health bereitgestellten Tageswert an und kann neue, in SchrittTracker erfasste Wassermengen in Apple Health speichern. SchrittTracker schreibt keine anderen Datentypen in Apple Health.</p>
       <p>So kann derselbe Wasserstand auch in TrinkWas! oder einer anderen, von dir gesondert autorisierten App erscheinen. SchrittTracker und TrinkWas! tauschen keine Daten direkt aus und verwenden dafuer keinen Entwickler-Server. Apple Health ist die von Apple verwaltete Datenquelle.</p>
       <p>Wenn du den Zugriff ablehnst oder widerrufst, bleibt die lokale Wassererfassung in SchrittTracker nutzbar. Bereits in Apple Health gespeicherte Eintraege werden dort getrennt verwaltet und koennen in Apple Health eingesehen oder geloescht werden. Das Loeschen lokaler SchrittTracker-Daten loescht bereits an Apple Health uebergebene Eintraege nicht automatisch.</p>
-      <p>Apple-Health-Daten und daraus abgeleitete Wellnesswerte werden nicht auf einen vom Entwickler betriebenen Server hochgeladen und nicht in das iCloud-Backup der App aufgenommen. Eine kompakte Anzeige kann ueber Apples WatchConnectivity an deine gekoppelte Apple Watch gesendet und dort zwischengespeichert werden. Je nach deinen Apple- und iCloud-Einstellungen kann Apple Health Daten zwischen deinen Apple-Geraeten synchronisieren; der Entwickler erhaelt darauf keinen Zugriff.</p>
+      <p>Einzelne Apple-Health-Daten und daraus abgeleitete Wellnesswerte werden nicht auf das optionale Statistik-Backend hochgeladen und nicht in das iCloud-Backup der App aufgenommen. Wenn du die anonyme Nutzungsstatistik aktivierst, wird nur das getrennte Tagesaggregat aus dem vorherigen Abschnitt uebermittelt. Eine kompakte Anzeige kann ueber Apples WatchConnectivity an deine gekoppelte Apple Watch gesendet und dort zwischengespeichert werden. Je nach deinen Apple- und iCloud-Einstellungen kann Apple Health Daten zwischen deinen Apple-Geraeten synchronisieren; der Entwickler erhaelt darauf keinen Zugriff.</p>
       <p>Du kannst den Zugriff auf Apple Health jederzeit in den iOS-Einstellungen widerrufen.</p>
     </section>
 
@@ -65,6 +79,7 @@
         <li>Apple Health: optional fuer freigegebene Gesundheits- und Wellnesswerte.</li>
         <li>Apple Health - Schreiben: optional und ausschliesslich fuer neue Trinkwassereintraege bei aktivierter Synchronisierung.</li>
         <li>Game Center: optional fuer Bestenlisten, Erfolge und Freundesvergleich.</li>
+        <li>Fotos: Apples Systemauswahl fuer ein freiwillig ausgewaehltes Profilbild, ohne pauschalen Mediathek-Zugriff.</li>
       </ul>
     </section>
 
