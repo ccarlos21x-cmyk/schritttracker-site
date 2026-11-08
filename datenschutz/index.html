@@ -11,7 +11,7 @@
   <main class="shell legal">
     <a class="back" href="../">SchrittTracker</a>
     <h1>Datenschutzerklaerung</h1>
-    <p class="meta">Stand: 25. September 2026</p>
+    <p class="meta">Stand: 8. November 2026</p>
 
     <section>
       <h2>Grundsatz</h2>
@@ -37,6 +37,18 @@
       <p>Die Kennung enthaelt keinen Namen, keine E-Mail-Adresse, keine Apple-ID und keine Werbe-ID. Nicht uebertragen werden Profilbild, Gewicht, Groesse, Puls, Schlaf, Trinkdaten, genaue GPS-Koordinaten, Routen oder einzelne HealthKit-Messwerte. Die Daten werden ausschliesslich verwendet, um Nutzung und Stabilitaet von SchrittTracker zu verstehen und die App zu verbessern. Aktivitaetswerte erscheinen im Admin-Dashboard erst ab mindestens fuenf teilnehmenden Installationen.</p>
       <p>Die geschuetzte Speicherung erfolgt in einem Supabase-Projekt; die Schnittstelle und das Admin-Dashboard werden ueber Vercel betrieben. Rohdaten der Live-Praesenz laufen nach 70 Minuten ab und werden stuendlich geloescht. Sitzungen und Tagesaggregate werden hoechstens 400 Tage gespeichert. Installationsdatensaetze werden nach 400 Tagen ohne Kontakt entfernt.</p>
       <p>Wenn du die Funktion ausschaltest, fordert SchrittTracker die Loeschung aller mit der zufaelligen Kennung verbundenen Serverdaten an. Nach erfolgreicher Loeschung wird die Kennung vom Geraet entfernt. Ist das iPhone voruebergehend offline, versucht die App die Loeschung bei der naechsten Verbindung erneut.</p>
+    </section>
+
+    <section>
+      <h2>Freiwillige Community-Rangliste</h2>
+      <p>Die Teilnahme ist optional, getrennt von der Nutzungsstatistik und standardmaessig ausgeschaltet. Du brauchst kein Konto, Passwort oder E-Mail-Adresse. Erst wenn du in der App zustimmst und einen weltweit einmaligen Spitznamen sowie ein Land auswaehlst, legt SchrittTracker ein Ranglistenprofil an.</p>
+      <p>Wenn du die Verfuegbarkeit eines Namens pruefst, wird der eingegebene Spitzname an die SchrittTracker-Schnittstelle uebertragen. Ein Ranglistenprofil wird erst nach deiner ausdruecklichen Zustimmung angelegt.</p>
+      <p>In der Rangliste werden dein Spitzname, dein Land mit Flagge und die Zahl deiner erreichten Tagesziele dieser Woche (0 bis 7) angezeigt. Diese Angaben sind fuer andere Teilnehmende sichtbar. SchrittTracker veroeffentlicht dafuer weder deinen echten Namen noch deine E-Mail-Adresse, exakte Schrittzahl, Profilbild, GPS-Route, Gewicht oder einzelne Gesundheitsdaten. Der Wochenwert wird von der App uebermittelt und ist fuer eine freundliche Motivation gedacht, nicht als manipulationssicherer Wettbewerb.</p>
+      <p>Zum Aendern und Loeschen deines Profils erzeugt die App eine zufaellige Teilnahme-Kennung, die nur im Schluesselbund dieses Geraets gespeichert wird. Der Server speichert ausschliesslich deren SHA-256-Hash; die Kennung wird nicht in der Rangliste angezeigt. Ranglistenprofil und Wochenstand werden geloescht, wenn du die Teilnahme in Social League beendest. Wenn das Geraet offline ist, bleibt die Teilnahme aktiv, bis die Loeschung erfolgreich wiederholt wurde. Inaktive Profile werden nach 400 Tagen geloescht.</p>
+      <p>Die Rangliste wird ueber die SchrittTracker-Schnittstelle auf Vercel mit Datenhaltung in Supabase betrieben. Deine Ranglisten-Zustimmung ist unabhaengig von der Einwilligung zur Nutzungsstatistik.</p>
+      <p>Beleidigende oder diskriminierende Spitznamen werden beim Speichern gefiltert. Du kannst sichtbare Ranglistennamen direkt in der App mit einem festen Grund melden: beleidigender Name, diskriminierender Ausdruck, Identitaetstaeuschung oder anderer Regelverstoss. Eine Meldung enthaelt den gemeldeten Namen und das Land, den ausgewaehlten Grund sowie den SHA-256-Hash deiner zufaelligen App-Kennung. Dieser Hash begrenzt Spam und doppelte Meldungen. Es werden keine E-Mail-Adresse, kein echter Name, keine Schritte, Gesundheitsdaten oder GPS-Daten mitgesendet. Meldungen werden manuell geprueft; ein Report allein loest keine automatische Sperre aus.</p>
+      <p>Offene und bearbeitete Meldungen sowie der zugehoerige Hash werden nach 400 Tagen geloescht. Moderatoren koennen einen Namen aus der Rangliste entfernen und den Namen oder den bekannten Installationsschluessel fuer hoechstens 400 Tage sperren. Der Installationsschluessel bestaetigt keine reale Person; nach einer Neuinstallation kann ein neuer Schluessel entstehen. Die Funktion "Fuer mich blockieren" blendet einen Namen nur auf deinem iPhone aus.</p>
+      <p>Vercel und Supabase koennen technische Verbindungsdaten verarbeiten, die fuer Bereitstellung und Schutz des Dienstes erforderlich sind.</p>
     </section>
 
     <section>
@@ -79,6 +91,7 @@
         <li>Apple Health: optional fuer freigegebene Gesundheits- und Wellnesswerte.</li>
         <li>Apple Health - Schreiben: optional und ausschliesslich fuer neue Trinkwassereintraege bei aktivierter Synchronisierung.</li>
         <li>Game Center: optional fuer Bestenlisten, Erfolge und Freundesvergleich.</li>
+        <li>Community-Rangliste: optional; erst nach gesonderter Zustimmung fuer Spitzname, Land/Flagge und erreichte Tagesziele pro Woche.</li>
         <li>Fotos: Apples Systemauswahl fuer ein freiwillig ausgewaehltes Profilbild, ohne pauschalen Mediathek-Zugriff.</li>
       </ul>
     </section>
